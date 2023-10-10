@@ -13,31 +13,44 @@
         .container {
             max-width: 400px;
             margin: 0 auto;
-            margin-top: 50px;
+            margin-top: 8%;
+             
         }
+        body{
+            background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    color: white;
+}
+.button{
+    
+    margin-left: 25%;color: white;background-color: black;border: solid 2px black;padding-right: 15%;padding-left: 15%;padding: 5px;width: 55%; border-radius: 20px;
+}
+
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
         <h2 class="text-center mb-4">Registration Form</h2>
         <form id="registrationForm">
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter Your Username" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email"required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
             </div>
             <div class="form-group">
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" class="button">Register</button>
         </form>
     </div>
 
